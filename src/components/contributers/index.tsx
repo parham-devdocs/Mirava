@@ -4,6 +4,7 @@ import ContributorCard from "./contributorCard";
 import { ContributorSkeleton } from "./contributorSkeleton";
 import { githubContributorsListQueryOptions } from "../../lib/api";
 import { useMemo } from "react";
+import { ErrorMessage } from "../ErrorMessage";
 
 const Contributors = () => {
     const {
