@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
-* {
-  font-family: "Vazirmatn", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("https://lib.arvancloud.ir/.../Vazirmatn-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
 }
-
 body, #root {
   background-color: #054e60;
 }

@@ -4,11 +4,15 @@ import './index.css'
 import App from './App.tsx'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClient } from './integrations/tanstack-query/index.ts'
+import { HelmetProvider } from 'react-helmet-async'
 
 createRoot(document.getElementById('root')!).render(
   <QueryClientProvider client={queryClient}>
     <StrictMode>
+      <HelmetProvider>
       <App />
+
+      </HelmetProvider>
     </StrictMode>
   </QueryClientProvider>
 )
